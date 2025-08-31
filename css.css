@@ -1,0 +1,152 @@
+:root{
+    --red: #dc3545;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.color-d{
+    color: #dc3545;
+    max-width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.w-text{
+    font-weight: 700;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/glav/1622468922392.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    filter: blur(8px);
+    z-index: -2;
+}
+
+body{
+    position: relative;
+    z-index: 0;
+}
+
+/*havbar*/
+
+.navbar{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link{
+    color: black;
+    transition:  color 0.5s;
+}
+
+.nav-link:hover{
+    color:var(--red) ;
+}
+
+section#novinki .card{
+    transition: transform 0.5s;
+}
+
+section#novinki .card:hover{
+    transform: scale(1.05);
+}
+
+section#warranty img{
+    max-width: 400px;
+    min-width: 200px;
+}
+
+section#courses .nav-link.active{
+    background-color: var(--red);
+}
+
+section#courses .nav-link{
+    color: white;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  background-color: var(--red);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+
+
+.btn-up:hover {
+  color: black;
+}
+
+.btn-up:hover i {
+  transform: scale(1.2);
+  font-size: 1.4rem;
+}
+
+
+.heading{
+    text-align: center;
+}
+
+.dropdown-menu{
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 150px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition:  opacity 0.2s;
+}
+
+.dropdown-menu li{
+    background: #333;
+    display: block;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+
+}
+
+.navbar li{
+    cursor: pointer;
+    background: transparent;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.navbar li:hover{
+    background: transparent;
+    color: #ffff;
+}

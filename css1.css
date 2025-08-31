@@ -1,0 +1,11 @@
+li{
+    list-style: none;
+}
+
+*{
+    color: rgb(0, 0, 0);
+}
+.havbar-custom{
+background: linear-gradient(135deg,#00FFFF,#000080);
+box-shadow: 0px 4px 20px rgb(0, 0, 0, 0.1);
+}
