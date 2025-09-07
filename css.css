@@ -160,6 +160,10 @@ section#courses .nav-link{
     color: #ffff;
 }
 
+.burger-checkbox{
+    display: none;
+}
+
 @media(max-width:768px){
     .burger-checkbox {
   position: absolute;
